@@ -6,7 +6,7 @@
 
 
 .font-fira-sans {
-  font-family: "Fira Sans", sans-serif;
+    font-family: "Fira Sans", sans-serif;
 }
 
 body {
@@ -83,4 +83,157 @@ nav ul a {
     background-color: #006A50;
     color: #FFFFFF;
     padding: 17px 34px;
+}
+
+#pillars {
+    margin: 80px auto;
+}
+
+#pillars h2 {
+    font-size: 40;
+    font-weight: bold;
+    color: #0E0E0E;
+    margin-bottom: 32px;
+}
+
+.pillar-container {
+    display: flex;
+    gap: 24px;
+}
+
+.pillar-card {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background-color: #FFFFFF;
+}
+
+.pillar-card img {
+    max-width: 64px;
+}
+
+.pillar-card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0E0E0E;
+}
+
+.pillar-card p {
+    color: rgba(14, 14, 14, 0.7);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#vision {
+    margin: 80px auto;
+}
+
+#vision h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0E0E0E;
+    margin-bottom: 24px;
+}
+
+#vision p {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(14, 14, 14, 0.7);
+}
+
+.vision-container {
+    display: flex;
+    gap: 24px;
+    /* all card similar height */
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 32px auto;
+}
+
+.vision-card {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 32px;
+}
+
+.vision-card img {
+    max-width: 64px;
+}
+
+.vision-card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(14, 14, 14, 0.8);
+}
+
+.vision-card button {
+    /* push btn to bottom of parent, absorbing all space above */
+    margin-top: auto;
+    padding: 11px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    max-width: max-content;
+    border: none;
+}
+
+.vision-card:nth-child(1) {
+    background: rgba(84, 144, 245, 0.2);
+}
+
+.vision-card:nth-child(2) {
+    background: #C6E4D6;
+}
+
+.vision-card:nth-child(3) {
+    background: #F7EBCF;
+}
+
+.vision-card:nth-child(1) button {
+    background: #5490F5;
+}
+
+.vision-card:nth-child(2) button {
+    background: #09A15C;
+}
+
+.vision-card:nth-child(3) button {
+    background: #FFC239;
+}
+
+.quote-container {
+    border-radius: 16px;
+    padding: 24px 48px;
+    background-color: white;
+    position: relative;
+}
+
+.quote-container p {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(14, 14, 14, 0.8);
+    margin-bottom: 12px;
+}
+
+.quote-container h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(14, 14, 14, 0.8);
+    margin-bottom: 4px;
+}
+
+.quote-container i {
+    font-size: 64px;
+    color: #0E0E0E4D;
+    /* removes <i> element from normal flow, meaning other elements will behave as if it doesn't exist */
+    position: absolute;
+    /* places <i> element at specific location relative to its nearest ancestor, which is .quote-container */
+    top: 5px;
+    left: 35px;
 }
