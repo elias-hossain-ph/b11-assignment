@@ -218,6 +218,7 @@ nav ul a {
     line-height: 24px;
     color: rgba(14, 14, 14, 0.8);
     margin-bottom: 12px;
+    text-align: justify;
 }
 
 .quote-container h4 {
@@ -236,4 +237,126 @@ nav ul a {
     /* places <i> element at specific location relative to its nearest ancestor, which is .quote-container */
     top: 5px;
     left: 35px;
+}
+
+#opinion {
+    margin: 80px auto;
+}
+
+#opinion h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0E0E0E;
+    margin-bottom: 24px;
+}
+
+.opinion-container {
+    border-radius: 16px;
+    padding: 32px 32px;
+    background-color: white;
+}
+
+.opinion-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.opinion-table th, .opinion-table td {
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    padding: 24px 24px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0E0E0E;
+}
+
+.opinion-table th {
+    background-color: #C6E4D6;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opinion-table select {
+    border-radius: 4px;
+    padding: 14px 10px;
+    background-color: #C6E4D6;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0E0E0E;
+}
+
+#news {
+    margin: 80px auto;
+}
+
+#news h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0E0E0E;
+    margin-bottom: 24px;
+}
+
+#news p {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(14, 14, 14, 0.7);
+    margin-bottom: 32px;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.news-card {
+    background-color: white;
+    border-radius: 24px;
+    padding: 48px 48px;
+    display: flex;
+    gap: 32px;
+}
+
+.news-card img {
+    border-radius: 24px;
+}
+
+.news-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.news-card .card-info {
+    display: flex;
+    flex-direction: column;
+    /* gap: 32px; */
+}
+
+.news-card .card-info img {
+    max-width: 135px;
+    margin-bottom: 12px;
+}
+
+.news-card .card-info h4 {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgba(14, 14, 14, 0.8);
+    margin-bottom: 12px;
+}
+
+.date-time {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 12px;
+    color: rgba(14, 14, 14, 0.7);
+}
+
+.news-card .btn {
+    background-color: #006A50;
+    color: white;
+    padding: 13px 26px;
+    max-width: max-content;
 }
